@@ -6,4 +6,74 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+//importamos los archivos secundarios
+//utilidades
+@import "utilidades/variables";
+@import "utilidades/mixin";
+@import "utilidades/extend";
+@import "utilidades/condicionales";
+//paginas del sitio
+@import "html/index";
+@import "html/quienes-somos";
+@import "html/calidad";
+@import "html/productos";
+@import "html/contacto";
+
 /*estilos generales*/
+body {
+    font-family: 'Roboto', sans-serif;
+    background: rgb(224, 197, 181);
+    background: linear-gradient(90deg, rgba(224, 197, 181, 1) 10%, rgba(234, 216, 206, 1) 35%, rgba(245, 236, 231, 1) 50%);
+}
+
+/*estilos de header*/
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    nav {
+        div {
+            .navbar-collapse {
+                .navbar-nav {
+                    font-family: 'Roboto', sans-serif;
+                    padding: 0.1rem;
+                    text-align: center;
+                    gap: 0.5rem;
+
+                    .nav-item {
+                        .active {
+                            font-weight: bold;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*estilos de footer*/
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+
+    .derechos {
+        .texto-derechos {
+            text-align: center;
+            font-size: 0.7rem;
+        }
+    }
+
+    .redes {
+        a {
+            img {
+                width: 1rem;
+            }
+        }
+    }
+}
