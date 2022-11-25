@@ -1,0 +1,25 @@
+{
+  "name": "preentrega3gruppo",
+  "version": "1.0.0",
+  "description": "pre entrega del curso de desarrollo web de coderhouse",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mgruppo/PreEntrega3Gruppo.git"
+  },
+  "author": "Mariano Gruppo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mgruppo/PreEntrega3Gruppo/issues"
+  },
+  "homepage": "https://mgruppo.github.io/PreEntrega3Gruppo/",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  }
+}
