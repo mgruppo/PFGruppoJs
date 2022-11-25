@@ -1,0 +1,17 @@
+//mixin con parametros
+@mixin formato-parrafo($size, $color, $align) {
+    font-size: $size;
+    color: $color;
+    text-align: $align;
+}
+
+@mixin formato-titulo($size, $color, $color-shadow, $align) {
+    @include formato-parrafo($size, $color, $align);
+    text-shadow: 0.7px 0.5px 0.5px $color-shadow;   
+}
+
+@mixin flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

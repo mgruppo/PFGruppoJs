@@ -15,8 +15,8 @@ body {
 header {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center; }
+  align-items: center;
+  justify-content: space-evenly; }
   header nav div .navbar-collapse .navbar-nav {
     font-family: 'Roboto', sans-serif;
     padding: 0.1rem;
@@ -37,3 +37,54 @@ footer {
     font-size: 0.7rem; }
   footer .redes a img {
     width: 1rem; }
+
+/*estilo de las tipografias*/
+.titulo-1 {
+  font-size: 2.3rem;
+  color: #2b425f;
+  text-align: auto;
+  text-shadow: 0.7px 0.5px 0.5px #2b425f;
+  font-weight: bold; }
+
+.titulo-2 {
+  font-size: 1.5rem;
+  color: #29547b;
+  text-align: center;
+  text-shadow: 0.7px 0.5px 0.5px #29547b; }
+
+.titulo-2 {
+  font-size: 1.2rem;
+  color: #001f3b;
+  text-align: center;
+  text-shadow: 0.7px 0.5px 0.5px #001f3b;
+  margin: 0.5rem; }
+
+.parrafo-principal {
+  font-size: 0.9rem;
+  color: #182941;
+  text-align: center; }
+
+.parrafo-secundario {
+  font-size: 0.8rem;
+  color: #182941;
+  text-align: center; }
+
+/*Boton de whatsapp en todas las paginas*/
+.fixed {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  animation-name: img-movimiento;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-direction: alternate-reverse; }
+
+/*Animaciones*/
+/*Animacion de efecto constante boton whatsapp*/
+@keyframes img-movimiento {
+  to {
+    transform: scale(1); }
+  from {
+    transform: scale(1.2); } }

@@ -23,16 +23,14 @@
 /*estilos generales*/
 body {
     font-family: 'Roboto', sans-serif;
-    background: rgb(224, 197, 181);
-    background: linear-gradient(90deg, rgba(224, 197, 181, 1) 10%, rgba(234, 216, 206, 1) 35%, rgba(245, 236, 231, 1) 50%);
+    background: $color-fondo;
+    background: $color-fondo-gradiente;
 }
 
 /*estilos de header*/
 header {
-    display: flex;
-    flex-direction: column;
+    @include flex;
     justify-content: space-evenly;
-    align-items: center;
 
     nav {
         div {
@@ -57,9 +55,7 @@ header {
 
 /*estilos de footer*/
 footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex;
     padding: 1rem;
 
     .derechos {
@@ -75,5 +71,50 @@ footer {
                 width: 1rem;
             }
         }
+    }
+}
+
+/*estilo de las tipografias*/
+.titulo-1 {
+    @include formato-titulo(2.3rem,nth($colores-letras, 1),nth($colores-letras, 1),auto);
+    font-weight: bold;
+}
+.titulo-2 {
+    @include formato-titulo(1.5rem,nth($colores-letras, 2),nth($colores-letras, 2),center);
+}
+.titulo-2 {
+    @include formato-titulo(1.2rem,nth($colores-letras, 3),nth($colores-letras, 3),center);
+    margin: 0.5rem;
+}
+.parrafo-principal {
+    @include formato-parrafo(0.9rem,nth($colores-letras, 4), center);
+}
+
+.parrafo-secundario {
+    @include formato-parrafo(0.8rem,nth($colores-letras, 4), center);
+}
+
+/*Boton de whatsapp en todas las paginas*/
+.fixed {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    animation-name: img-movimiento;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-direction: alternate-reverse;
+}
+
+/*Animaciones*/
+/*Animacion de efecto constante boton whatsapp*/
+@keyframes img-movimiento {
+    to {
+        transform: scale(1);
+    }
+
+    from {
+        transform: scale(1.2);
     }
 }

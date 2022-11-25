@@ -1,0 +1,15 @@
+//archivo de variables
+//colores de fondo
+$color-fondo: rgb(224, 197, 181);
+$color-fondo-gradiente: linear-gradient(90deg, rgba(224, 197, 181, 1) 10%, rgba(234, 216, 206, 1) 35%, rgba(245, 236, 231, 1) 50%);
+//paleta de colores para fondos y secciones
+$colores-fondo:
+rgb(224, 197, 181),
+#e0c5b5,
+whitesmoke;
+//color texto
+$colores-letras:
+#2b425f, //titulo 1
+#29547b, //titulo 2
+#001f3b, //titulo 3
+#182941; //texto
