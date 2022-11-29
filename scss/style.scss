@@ -13,12 +13,6 @@
 @import "utilidades/mixin";
 @import "utilidades/extend";
 @import "utilidades/condicionales";
-//paginas del sitio
-@import "html/index";
-@import "html/quienes-somos";
-@import "html/calidad";
-@import "html/productos";
-@import "html/contacto";
 
 /*estilos generales*/
 body {
@@ -27,72 +21,19 @@ body {
     background: $color-fondo-gradiente;
 }
 
-/*estilos de header*/
-header {
-    @include flex;
-    justify-content: space-evenly;
+//importo los titulos y parrafos
+@import "base/tipografia";
 
-    nav {
-        div {
-            .navbar-collapse {
-                .navbar-nav {
-                    font-family: 'Roboto', sans-serif;
-                    padding: 0.1rem;
-                    text-align: center;
-                    gap: 0.5rem;
+//partials de header y de footer
+@import "layout/header";
+@import "layout/footer";
 
-                    .nav-item {
-                        .active {
-                            font-weight: bold;
-                            text-decoration: underline;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-/*estilos de footer*/
-footer {
-    @include flex;
-    padding: 1rem;
-
-    .derechos {
-        .texto-derechos {
-            text-align: center;
-            font-size: 0.7rem;
-        }
-    }
-
-    .redes {
-        a {
-            img {
-                width: 1rem;
-            }
-        }
-    }
-}
-
-/*estilo de las tipografias*/
-.titulo-1 {
-    @include formato-titulo(2.3rem,nth($colores-letras, 1),nth($colores-letras, 1),auto);
-    font-weight: bold;
-}
-.titulo-2 {
-    @include formato-titulo(1.5rem,nth($colores-letras, 2),nth($colores-letras, 2),center);
-}
-.titulo-2 {
-    @include formato-titulo(1.2rem,nth($colores-letras, 3),nth($colores-letras, 3),center);
-    margin: 0.5rem;
-}
-.parrafo-principal {
-    @include formato-parrafo(0.9rem,nth($colores-letras, 4), center);
-}
-
-.parrafo-secundario {
-    @include formato-parrafo(0.8rem,nth($colores-letras, 4), center);
-}
+//paginas del sitio
+@import "html/index";
+@import "html/quienes-somos";
+@import "html/calidad";
+@import "html/productos";
+@import "html/contacto";
 
 /*Boton de whatsapp en todas las paginas*/
 .fixed {

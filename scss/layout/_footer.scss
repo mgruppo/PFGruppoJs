@@ -1,0 +1,20 @@
+/*estilos de footer*/
+//nesting para trabajar estilos de etiquetas padres con sus etiquetas hijos en el footer
+footer {
+    @include flex;
+    padding: 1rem;
+
+    .derechos {
+        .texto-derechos {
+            @include formato-parrafo(0.9rem,nth($colores-letras, 4), center);
+        }
+    }
+
+    .redes {
+        a {
+            img {
+                width: 1rem;
+            }
+        }
+    }
+}

@@ -5,11 +5,60 @@
   padding: 0;
   box-sizing: border-box; }
 
+/*extend*/
+/*
+%estilosSention {
+    padding: 1rem;
+}
+
+section-uno {
+    @extend %estilosSention;
+    margin: 3rem;
+}
+
+section-dos {
+    @extend %estilosSention;
+    margin: 5rem;
+}
+*/
+.titulo-3, .parrafo-principal, .parrafo-secundario {
+  margin: 0.5rem; }
+
 /*estilos generales*/
 body {
   font-family: 'Roboto', sans-serif;
   background: #e0c5b5;
   background: linear-gradient(90deg, #e0c5b5 10%, #ead8ce 35%, #f5ece7 50%); }
+
+/*estilo de las tipografias*/
+.titulo-1 {
+  font-size: 2.2rem;
+  color: #2b425f;
+  text-align: auto;
+  text-shadow: 0.7px 0.5px 0.5px #2b425f;
+  font-weight: bold; }
+
+.titulo-2 {
+  font-size: 1.8rem;
+  color: #29547b;
+  text-align: center;
+  text-shadow: 0.7px 0.5px 0.5px #29547b; }
+
+.titulo-3 {
+  font-size: 1.6rem;
+  color: #001f3b;
+  text-align: center;
+  text-shadow: 0.7px 0.5px 0.5px #001f3b; }
+
+.parrafo-principal {
+  font-size: 1.2rem;
+  color: #182941;
+  text-align: center; }
+
+.parrafo-secundario {
+  font-size: 1.1rem;
+  color: #182941;
+  text-align: center; }
 
 /*estilos de header*/
 header {
@@ -33,41 +82,42 @@ footer {
   align-items: center;
   padding: 1rem; }
   footer .derechos .texto-derechos {
-    text-align: center;
-    font-size: 0.7rem; }
+    font-size: 0.9rem;
+    color: #182941;
+    text-align: center; }
   footer .redes a img {
     width: 1rem; }
 
-/*estilo de las tipografias*/
-.titulo-1 {
-  font-size: 2.3rem;
-  color: #2b425f;
-  text-align: auto;
-  text-shadow: 0.7px 0.5px 0.5px #2b425f;
-  font-weight: bold; }
+.principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .principal iframe {
+    width: 95%;
+    height: 95%;
+    margin: 1rem; }
 
-.titulo-2 {
-  font-size: 1.5rem;
-  color: #29547b;
-  text-align: center;
-  text-shadow: 0.7px 0.5px 0.5px #29547b; }
-
-.titulo-2 {
-  font-size: 1.2rem;
-  color: #001f3b;
-  text-align: center;
-  text-shadow: 0.7px 0.5px 0.5px #001f3b;
-  margin: 0.5rem; }
-
-.parrafo-principal {
-  font-size: 0.9rem;
-  color: #182941;
-  text-align: center; }
-
-.parrafo-secundario {
-  font-size: 0.8rem;
-  color: #182941;
-  text-align: center; }
+/*se trabaja con la mq 1024 para pc*/
+@media screen and (min-width: 1024px) {
+  /*estilo del contenedor principal*/
+  .contenedor {
+    display: grid;
+    height: 100vh; }
+    .contenedor .principal {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 0.5fr 0.5fr;
+      grid-template-areas: "p-h2-1 iframe" "p-uno iframe" "p-h2-2 p-h2-2" "p-dos p-dos"; }
+      .contenedor .principal .p-h2-1 {
+        grid-area: p-h2-1; }
+      .contenedor .principal .p-h2-2 {
+        grid-area: p-h2-2; }
+      .contenedor .principal .p-uno {
+        grid-area: p-uno; }
+      .contenedor .principal .p-dos {
+        grid-area: p-dos; }
+      .contenedor .principal iframe {
+        grid-area: iframe; } }
 
 /*Boton de whatsapp en todas las paginas*/
 .fixed {

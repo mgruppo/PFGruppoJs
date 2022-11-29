@@ -1,0 +1,21 @@
+//extend para extender los estilos en distintas etiquetas
+/*extend*/
+/*
+%estilosSention {
+    padding: 1rem;
+}
+
+section-uno {
+    @extend %estilosSention;
+    margin: 3rem;
+}
+
+section-dos {
+    @extend %estilosSention;
+    margin: 5rem;
+}
+*/
+
+%estilos-margenes {
+    margin: 0.5rem;
+}

@@ -1,0 +1,26 @@
+/*estilos de header*/
+//nesting para trabajar estilos de etiquetas padres con sus etiquetas hijos en el header
+header {
+    @include flex;
+    justify-content: space-evenly;
+
+    nav {
+        div {
+            .navbar-collapse {
+                .navbar-nav {
+                    font-family: 'Roboto', sans-serif;
+                    padding: 0.1rem;
+                    text-align: center;
+                    gap: 0.5rem;
+
+                    .nav-item {
+                        .active {
+                            font-weight: bold;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
