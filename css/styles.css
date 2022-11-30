@@ -7,28 +7,27 @@
 
 /*estilos generales del body*/
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background: #e0c5b5;
   background: linear-gradient(90deg, #e0c5b5 10%, #ead8ce 35%, #f5ece7 50%); }
 
 /*extend*/
-/*
-%estilosSention {
-    padding: 1rem;
-}
+.titulo-3, .parrafo-principal, .parrafo-secundario, .main-contacto .formulario {
+  margin: 0.3rem;
+  padding: 0.4rem; }
 
-section-uno {
-    @extend %estilosSention;
-    margin: 3rem;
-}
+.quienes-somos img, .main-contacto .visitanos iframe {
+  width: 90%;
+  height: 95%;
+  margin: 0.3rem;
+  filter: drop-shadow(7px 5px 5px); }
 
-section-dos {
-    @extend %estilosSention;
-    margin: 5rem;
-}
-*/
-.titulo-3, .parrafo-principal, .parrafo-secundario {
-  margin: 0.5rem; }
+.quienes-somos .titulo-2 span, .main-contacto .llamanos .p-dos span {
+  display: block;
+  font-weight: bold; }
+
+.nav-item:hover, .boton-capodacqua:hover, .imagen-redes:hover {
+  transform: scale(1.1); }
 
 /*estilo de las tipografias*/
 .titulo-1 {
@@ -67,18 +66,13 @@ header {
   align-items: center;
   justify-content: space-evenly; }
   header nav div .navbar-collapse .navbar-nav {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     padding: 0.1rem;
     text-align: center;
     gap: 0.5rem; }
     header nav div .navbar-collapse .navbar-nav .nav-item .active {
       font-weight: bold;
       text-decoration: underline; }
-
-/*para efecto cuando hacen click menu*/
-.nav-item:hover {
-  text-shadow: 0.7px 0.5px 1px black;
-  transform: scale(1.1); }
 
 /*estilos de footer*/
 footer {
@@ -100,7 +94,8 @@ footer {
   .principal iframe {
     width: 95%;
     height: 95%;
-    margin: 1rem; }
+    margin: 0.5rem;
+    filter: drop-shadow(2px 3px 3px); }
 
 /*estilos de quienes somos*/
 .quienes-somos {
@@ -108,20 +103,9 @@ footer {
   flex-direction: column;
   align-items: center; }
   .quienes-somos .titulo-2 span {
-    display: block;
-    font-size: 2rem;
-    font-weight: bold; }
-  .quienes-somos .p-uno {
-    text-align: center;
-    padding: 1rem; }
+    font-size: 2.5rem; }
   .quienes-somos .p-dos span {
     font-weight: bold; }
-  .quienes-somos img {
-    width: 95%;
-    height: 95%;
-    margin: 0.3rem;
-    filter: drop-shadow(7px 5px 5px);
-    width: 95%; }
 
 .section-paginas div .quienes-imagen {
   display: none; }
@@ -135,11 +119,14 @@ footer {
   border: 2px solid #00445f;
   display: inline-block; }
 
-.main-contacto .formulario {
-  text-align: left; }
-
-.main-contacto .contacto-redes a .imagen-redes {
-  width: 5%; }
+.main-contacto {
+  text-align: center; }
+  .main-contacto .formulario form .datos-ingreso .form-control {
+    font-family: "Roboto", sans-serif; }
+  .main-contacto .formulario form .datos-ingreso .texto-mensaje {
+    color: gray; }
+  .main-contacto .contacto-redes a .imagen-redes {
+    width: 3rem; }
 
 /*se trabaja con la mq 1024 para pc*/
 @media screen and (min-width: 1024px) {
@@ -213,7 +200,23 @@ footer {
         margin: 2.5rem; }
       .contenedor .calidad .parrafo-secundario {
         grid-area: parrafo-secundario;
-        margin: 2rem; } }
+        margin: 2rem; }
+    .contenedor .main-contacto {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-areas: "formulario visitanos" "formulario visitanos" "llamanos visitanos" "contacto-redes contacto-redes"; }
+      .contenedor .main-contacto .formulario {
+        grid-area: formulario; }
+      .contenedor .main-contacto .visitanos {
+        grid-area: visitanos; }
+        .contenedor .main-contacto .visitanos iframe {
+          width: 95%;
+          height: 55%; }
+      .contenedor .main-contacto .llamanos {
+        grid-area: llamanos; }
+      .contenedor .main-contacto .contacto-redes {
+        grid-area: contacto-redes; } }
 
 /*Boton de whatsapp en todas las paginas*/
 .fixed {
@@ -227,6 +230,15 @@ footer {
   animation-duration: 2s;
   animation-direction: alternate-reverse; }
 
+.boton-capodacqua {
+  background-color: #7c95b8;
+  font-family: "Roboto", sans-serif;
+  color: whitesmoke;
+  padding: 0.7rem;
+  /*para que el boton se despegue del fondo se utiliza box-shadow*/
+  box-shadow: 1px 1px 5px black;
+  text-shadow: 1px 1px 5px black; }
+
 /*Animaciones*/
 /*Animacion de efecto constante boton whatsapp*/
 @keyframes img-movimiento {
@@ -234,3 +246,15 @@ footer {
     transform: scale(1); }
   from {
     transform: scale(1.2); } }
+
+/*para efecto cuando hacen click menu*/
+.nav-item:hover {
+  text-shadow: 0.7px 0.5px 1px black; }
+
+.navbar-brand:hover {
+  filter: drop-shadow(0.5px 0.5px 1px); }
+
+/*efecto sobre botones de la pagina*/
+.boton-capodacqua:hover {
+  box-shadow: 1px 1px 2px black;
+  background-color: #2b425f; }

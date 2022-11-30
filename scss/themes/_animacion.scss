@@ -9,3 +9,22 @@
         transform: scale(1.2);
     }
 }
+
+/*para efecto cuando hacen click menu*/
+.nav-item:hover {
+    text-shadow: 0.7px 0.5px 1px black;
+    @extend %estilo-sobre;
+}
+.navbar-brand:hover {
+    filter: drop-shadow(0.5px 0.5px 1px);
+}
+/*efecto sobre botones de la pagina*/
+.boton-capodacqua:hover {
+    box-shadow: 1px 1px 2px black;
+    background-color: nth($colores-letras, 1);
+    @extend %estilo-sobre;
+}
+//efecto para imagenes
+.imagen-redes:hover {
+    @extend %estilo-sobre;
+}

@@ -2,6 +2,9 @@
 //colores de fondo
 $color-fondo: rgb(224, 197, 181);
 $color-fondo-gradiente: linear-gradient(90deg, rgba(224, 197, 181, 1) 10%, rgba(234, 216, 206, 1) 35%, rgba(245, 236, 231, 1) 50%);
+//color de boton
+$color-boton: #7c95b8;
+$color-boton-letra: rgb(216, 216, 216);
 //paleta de colores para fondos y secciones en listas
 $colores-fondo:
 rgb(224, 197, 181),
@@ -12,7 +15,8 @@ $colores-letras:
 #2b425f, //titulo 1
 #29547b, //titulo 2
 #001f3b, //titulo 3
-#182941; //texto
+#182941, //texto
+black; //texto
 
 //medidas de texto
 $medidas-textos:
@@ -21,3 +25,7 @@ $medidas-textos:
 1.6rem,//titulo 3
 1.2rem,//parrafo-principal
 1.1rem;//parrafo-secundario
+
+//tipografia por defecto
+$tipogragia: 'Roboto', sans-serif;
+

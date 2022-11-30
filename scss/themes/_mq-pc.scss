@@ -129,6 +129,35 @@
             }
         }
 
+        //estilos contacto
+        .main-contacto {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-areas:
+                "formulario visitanos"
+                "formulario visitanos"
+                "llamanos visitanos"
+                "contacto-redes contacto-redes";
+            .formulario {
+                grid-area: formulario;
+            }
+            .visitanos {
+                grid-area: visitanos;
+                iframe {
+                    width: 95%;
+                    height: 55%;
+                }
+            }
+            .llamanos {
+                grid-area: llamanos;  
+            }
+            .contacto-redes {
+                grid-area: contacto-redes;
+            }
+        }
+        //fin contacto
+
 
 
     }
