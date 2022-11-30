@@ -126,6 +126,21 @@ footer {
 .section-paginas div .quienes-imagen {
   display: none; }
 
+.contenedor .main-producto .conectores .producto {
+  background-color: #9697af;
+  width: 200px;
+  height: 200px;
+  margin: 10px 15px 20px 25px;
+  padding: 5px;
+  border: 2px solid #00445f;
+  display: inline-block; }
+
+.main-contacto .formulario {
+  text-align: left; }
+
+.main-contacto .contacto-redes a .imagen-redes {
+  width: 5%; }
+
 /*se trabaja con la mq 1024 para pc*/
 @media screen and (min-width: 1024px) {
   /*estilo del contenedor principal*/
