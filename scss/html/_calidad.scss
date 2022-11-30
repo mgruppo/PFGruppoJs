@@ -1,0 +1,28 @@
+/*se trabaja con la mq 1024 para pc*/
+@media screen and (min-width:1024px) {
+    /*estilos de calidad*/
+    .calidad {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.1fr 0.1fr 1fr 0.1fr;
+        grid-template-areas:
+            "titulo-2 titulo-2"
+            "parrafo-principal parrafo-principal"
+            "div-calidad div-calidad"
+            "parrafo-secundario parrafo-secundario";
+        .titulo-2 {
+            grid-area: titulo-2;
+        }
+        .div-calidad {
+            grid-area: div-calidad;
+        }
+        .parrafo-principal {
+            grid-area: parrafo-principal;
+            margin: 2.5rem;
+        }
+        .parrafo-secundario {
+            grid-area: parrafo-secundario;
+            margin: 2rem;
+        }
+    }
+}

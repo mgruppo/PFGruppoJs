@@ -75,6 +75,11 @@ header {
       font-weight: bold;
       text-decoration: underline; }
 
+/*para efecto cuando hacen click menu*/
+.nav-item:hover {
+  text-shadow: 0.7px 0.5px 1px black;
+  transform: scale(1.1); }
+
 /*estilos de footer*/
 footer {
   display: flex;
@@ -118,6 +123,90 @@ footer {
         grid-area: p-dos; }
       .contenedor .principal iframe {
         grid-area: iframe; } }
+
+/*estilos de quienes somos*/
+.quienes-somos {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .quienes-somos .titulo-2 span {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold; }
+  .quienes-somos .p-uno {
+    text-align: center;
+    padding: 1rem; }
+  .quienes-somos .p-dos span {
+    font-weight: bold; }
+  .quienes-somos img {
+    width: 95%;
+    height: 95%;
+    margin: 0.3rem;
+    filter: drop-shadow(7px 5px 5px);
+    width: 95%; }
+
+.section-paginas div .quienes-imagen {
+  display: none; }
+
+/*se trabaja con la mq 1024 para pc*/
+@media screen and (min-width: 1024px) {
+  /*estilo del contenedor principal*/
+  .contenedor {
+    display: grid;
+    height: 100vh;
+    /*estilos de section*/ }
+    .contenedor .quienes-somos {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 0.5fr 0.5fr 0.5fr;
+      grid-template-areas: "h2 img" "p-uno img" "p-dos img"; }
+      .contenedor .quienes-somos h2 {
+        grid-area: h2; }
+      .contenedor .quienes-somos .p-uno {
+        grid-area: p-uno; }
+      .contenedor .quienes-somos .p-dos {
+        grid-area: p-dos; }
+      .contenedor .quienes-somos img {
+        grid-area: img; }
+    .contenedor .section-paginas {
+      display: block;
+      display: flex;
+      background-color: #e0c5b5; }
+      .contenedor .section-paginas div {
+        padding: 0.7rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .contenedor .section-paginas div .quienes-imagen {
+          display: block;
+          margin: 0.3rem;
+          width: 4rem;
+          filter: drop-shadow(2px 2px 2px);
+          animation-name: img-movimiento;
+          animation-iteration-count: infinite;
+          animation-duration: 4s;
+          animation-direction: alternate; }
+        .contenedor .section-paginas div p {
+          text-align: center; } }
+
+/*se trabaja con la mq 1024 para pc*/
+@media screen and (min-width: 1024px) {
+  /*estilos de calidad*/
+  .calidad {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 0.1fr 1fr 0.1fr;
+    grid-template-areas: "titulo-2 titulo-2" "parrafo-principal parrafo-principal" "div-calidad div-calidad" "parrafo-secundario parrafo-secundario"; }
+    .calidad .titulo-2 {
+      grid-area: titulo-2; }
+    .calidad .div-calidad {
+      grid-area: div-calidad; }
+    .calidad .parrafo-principal {
+      grid-area: parrafo-principal;
+      margin: 2.5rem; }
+    .calidad .parrafo-secundario {
+      grid-area: parrafo-secundario;
+      margin: 2rem; } }
 
 /*Boton de whatsapp en todas las paginas*/
 .fixed {
