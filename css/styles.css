@@ -5,6 +5,12 @@
   padding: 0;
   box-sizing: border-box; }
 
+/*estilos generales del body*/
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #e0c5b5;
+  background: linear-gradient(90deg, #e0c5b5 10%, #ead8ce 35%, #f5ece7 50%); }
+
 /*extend*/
 /*
 %estilosSention {
@@ -23,12 +29,6 @@ section-dos {
 */
 .titulo-3, .parrafo-principal, .parrafo-secundario {
   margin: 0.5rem; }
-
-/*estilos generales*/
-body {
-  font-family: 'Roboto', sans-serif;
-  background: #e0c5b5;
-  background: linear-gradient(90deg, #e0c5b5 10%, #ead8ce 35%, #f5ece7 50%); }
 
 /*estilo de las tipografias*/
 .titulo-1 {
@@ -102,28 +102,6 @@ footer {
     height: 95%;
     margin: 1rem; }
 
-/*se trabaja con la mq 1024 para pc*/
-@media screen and (min-width: 1024px) {
-  /*estilo del contenedor principal*/
-  .contenedor {
-    display: grid;
-    height: 100vh; }
-    .contenedor .principal {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr 0.5fr 0.5fr;
-      grid-template-areas: "p-h2-1 iframe" "p-uno iframe" "p-h2-2 p-h2-2" "p-dos p-dos"; }
-      .contenedor .principal .p-h2-1 {
-        grid-area: p-h2-1; }
-      .contenedor .principal .p-h2-2 {
-        grid-area: p-h2-2; }
-      .contenedor .principal .p-uno {
-        grid-area: p-uno; }
-      .contenedor .principal .p-dos {
-        grid-area: p-dos; }
-      .contenedor .principal iframe {
-        grid-area: iframe; } }
-
 /*estilos de quienes somos*/
 .quienes-somos {
   display: flex;
@@ -154,7 +132,25 @@ footer {
   .contenedor {
     display: grid;
     height: 100vh;
-    /*estilos de section*/ }
+    /*estilos de mq para index*/
+    /*estilo de mq para quienes-somos*/
+    /*estilos de section quienes somos*/
+    /*estilos de mq para calidad*/ }
+    .contenedor .principal {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 0.5fr 0.5fr;
+      grid-template-areas: "p-h2-1 iframe" "p-uno iframe" "p-h2-2 p-h2-2" "p-dos p-dos"; }
+      .contenedor .principal .p-h2-1 {
+        grid-area: p-h2-1; }
+      .contenedor .principal .p-h2-2 {
+        grid-area: p-h2-2; }
+      .contenedor .principal .p-uno {
+        grid-area: p-uno; }
+      .contenedor .principal .p-dos {
+        grid-area: p-dos; }
+      .contenedor .principal iframe {
+        grid-area: iframe; }
     .contenedor .quienes-somos {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -187,26 +183,22 @@ footer {
           animation-duration: 4s;
           animation-direction: alternate; }
         .contenedor .section-paginas div p {
-          text-align: center; } }
-
-/*se trabaja con la mq 1024 para pc*/
-@media screen and (min-width: 1024px) {
-  /*estilos de calidad*/
-  .calidad {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.1fr 0.1fr 1fr 0.1fr;
-    grid-template-areas: "titulo-2 titulo-2" "parrafo-principal parrafo-principal" "div-calidad div-calidad" "parrafo-secundario parrafo-secundario"; }
-    .calidad .titulo-2 {
-      grid-area: titulo-2; }
-    .calidad .div-calidad {
-      grid-area: div-calidad; }
-    .calidad .parrafo-principal {
-      grid-area: parrafo-principal;
-      margin: 2.5rem; }
-    .calidad .parrafo-secundario {
-      grid-area: parrafo-secundario;
-      margin: 2rem; } }
+          text-align: center; }
+    .contenedor .calidad {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 0.1fr 0.1fr 1fr 0.1fr;
+      grid-template-areas: "titulo-2 titulo-2" "parrafo-principal parrafo-principal" "div-calidad div-calidad" "parrafo-secundario parrafo-secundario"; }
+      .contenedor .calidad .titulo-2 {
+        grid-area: titulo-2; }
+      .contenedor .calidad .div-calidad {
+        grid-area: div-calidad; }
+      .contenedor .calidad .parrafo-principal {
+        grid-area: parrafo-principal;
+        margin: 2.5rem; }
+      .contenedor .calidad .parrafo-secundario {
+        grid-area: parrafo-secundario;
+        margin: 2rem; } }
 
 /*Boton de whatsapp en todas las paginas*/
 .fixed {

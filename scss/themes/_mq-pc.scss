@@ -1,0 +1,136 @@
+//estilos para dispositivos pc, se trabaja con 1024px para dicha version
+//en el presente archivo se trabajan todas las mq de todas las paginas
+/*se trabaja con la mq 1024 para pc*/
+@media screen and (min-width:1024px) {
+
+    /*estilo del contenedor principal*/
+    .contenedor {
+        display: grid;
+        height: 100vh;
+
+        //estilos de index
+        /*estilos de mq para index*/
+        .principal {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 0.5fr 0.5fr;
+            grid-template-areas:
+                "p-h2-1 iframe"
+                "p-uno iframe"
+                "p-h2-2 p-h2-2"
+                "p-dos p-dos";
+
+            .p-h2-1 {
+                grid-area: p-h2-1;
+            }
+
+            .p-h2-2 {
+                grid-area: p-h2-2;
+            }
+
+            .p-uno {
+                grid-area: p-uno;
+            }
+
+            .p-dos {
+                grid-area: p-dos;
+            }
+
+            iframe {
+                grid-area: iframe;
+            }
+        }
+
+        //estilos de quienes-somos
+        /*estilo de mq para quienes-somos*/
+        .quienes-somos {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 0.5fr 0.5fr 0.5fr;
+            grid-template-areas:
+                "h2 img"
+                "p-uno img"
+                "p-dos img";
+
+            h2 {
+                grid-area: h2;
+            }
+
+            .p-uno {
+                grid-area: p-uno;
+            }
+
+            .p-dos {
+                grid-area: p-dos;
+            }
+
+            img {
+                grid-area: img;
+            }
+        }
+
+        /*estilos de section quienes somos*/
+        .section-paginas {
+            display: block;
+            display: flex;
+            background-color: #e0c5b5;
+
+            div {
+                padding: 0.7rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .quienes-imagen {
+                    display: block;
+                    margin: 0.3rem;
+                    width: 4rem;
+                    filter: drop-shadow(2px 2px 2px);
+                    animation-name: img-movimiento;
+                    animation-iteration-count: infinite;
+                    animation-duration: 4s;
+                    animation-direction: alternate;
+                }
+
+                p {
+                    text-align: center;
+                }
+            }
+        }
+
+        //estilos de calidad
+        /*estilos de mq para calidad*/
+        .calidad {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 0.1fr 0.1fr 1fr 0.1fr;
+            grid-template-areas:
+                "titulo-2 titulo-2"
+                "parrafo-principal parrafo-principal"
+                "div-calidad div-calidad"
+                "parrafo-secundario parrafo-secundario";
+
+            .titulo-2 {
+                grid-area: titulo-2;
+            }
+
+            .div-calidad {
+                grid-area: div-calidad;
+            }
+
+            .parrafo-principal {
+                grid-area: parrafo-principal;
+                margin: 2.5rem;
+            }
+
+            .parrafo-secundario {
+                grid-area: parrafo-secundario;
+                margin: 2rem;
+            }
+        }
+
+
+
+    }
+
+}

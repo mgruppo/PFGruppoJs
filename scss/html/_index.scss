@@ -7,38 +7,3 @@
         margin: 1rem;
     }
 }
-
-/*se trabaja con la mq 1024 para pc*/
-@media screen and (min-width:1024px) {
-    /*estilo del contenedor principal*/
-    .contenedor {
-        display: grid;
-        height: 100vh;  
-        .principal {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr 0.5fr 0.5fr;
-            grid-template-areas:
-                "p-h2-1 iframe"
-                "p-uno iframe"
-                "p-h2-2 p-h2-2"
-                "p-dos p-dos";
-            .p-h2-1 {
-                grid-area: p-h2-1;
-            }
-            .p-h2-2 {
-                grid-area: p-h2-2;
-            }
-            .p-uno {
-                grid-area: p-uno;
-            }
-            .p-dos {
-                grid-area: p-dos;
-            }
-            iframe {
-                grid-area: iframe;
-            }    
-        }
-    }
-
-}

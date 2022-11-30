@@ -1,6 +1,7 @@
 /*estilos de quienes somos*/
 .quienes-somos {
     @include flex;
+
     .titulo-2 {
         span {
             display: block;
@@ -8,15 +9,18 @@
             font-weight: bold;
         }
     }
+
     .p-uno {
         text-align: center;
         padding: 1rem;
     }
+
     .p-dos {
         span {
             font-weight: bold;
         }
     }
+
     img {
         width: 95%;
         height: 95%;
@@ -33,59 +37,3 @@
         }
     }
 }
-
-
-/*se trabaja con la mq 1024 para pc*/
-@media screen and (min-width:1024px) {
-    /*estilo del contenedor principal*/
-    .contenedor {
-        display: grid;
-        height: 100vh;  
-        .quienes-somos {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 0.5fr 0.5fr 0.5fr;
-            grid-template-areas:
-                "h2 img"
-                "p-uno img"
-                "p-dos img";
-            h2 {
-                grid-area: h2;
-            }
-            .p-uno {
-                grid-area: p-uno;
-            }
-            .p-dos {
-                grid-area: p-dos;
-            }
-            img {
-                grid-area: img;
-            }
-        }
-        /*estilos de section*/
-        .section-paginas {
-            display: block;
-            display: flex;
-            background-color: #e0c5b5;
-            div {
-                padding: 0.7rem;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                .quienes-imagen {
-                    display: block;
-                    margin: 0.3rem;
-                    width: 4rem;
-                    filter: drop-shadow(2px 2px 2px);
-                    animation-name: img-movimiento;
-                    animation-iteration-count: infinite;
-                    animation-duration: 4s;
-                    animation-direction: alternate;
-                }
-                p {
-                    text-align: center;
-                }
-            }
-        }
-    }
-}    
