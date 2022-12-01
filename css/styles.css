@@ -12,7 +12,7 @@ body {
   background: linear-gradient(90deg, #e0c5b5 10%, #ead8ce 35%, #f5ece7 50%); }
 
 /*extend*/
-.titulo-3, .parrafo-principal, .parrafo-secundario, .main-contacto .formulario {
+.titulo-3, .parrafo-principal, .parrafo-secundario, .main-calidad .div-certificaciones .carousel, .main-contacto .formulario, .main-contacto .visitanos iframe {
   margin: 0.3rem;
   padding: 0.4rem; }
 
@@ -110,6 +110,9 @@ footer {
 .section-paginas div .quienes-imagen {
   display: none; }
 
+.main-calidad .p-dos span {
+  font-weight: bold; }
+
 .contenedor .main-producto .conectores .producto {
   background-color: #9697af;
   width: 200px;
@@ -123,10 +126,13 @@ footer {
   text-align: center; }
   .main-contacto .formulario form .datos-ingreso .form-control {
     font-family: "Roboto", sans-serif; }
+  .main-contacto .formulario form .datos-ingreso .formulario-area {
+    height: 10rem; }
   .main-contacto .formulario form .datos-ingreso .texto-mensaje {
     color: gray; }
   .main-contacto .contacto-redes a .imagen-redes {
-    width: 3rem; }
+    width: 3rem;
+    margin: 0.5rem; }
 
 /*se trabaja con la mq 1024 para pc*/
 @media screen and (min-width: 1024px) {
@@ -186,33 +192,37 @@ footer {
           animation-direction: alternate; }
         .contenedor .section-paginas div p {
           text-align: center; }
-    .contenedor .calidad {
+    .contenedor .main-calidad {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: 0.1fr 0.1fr 1fr 0.1fr;
-      grid-template-areas: "titulo-2 titulo-2" "parrafo-principal parrafo-principal" "div-calidad div-calidad" "parrafo-secundario parrafo-secundario"; }
-      .contenedor .calidad .titulo-2 {
-        grid-area: titulo-2; }
-      .contenedor .calidad .div-calidad {
-        grid-area: div-calidad; }
-      .contenedor .calidad .parrafo-principal {
-        grid-area: parrafo-principal;
-        margin: 2.5rem; }
-      .contenedor .calidad .parrafo-secundario {
-        grid-area: parrafo-secundario;
-        margin: 2rem; }
+      grid-template-rows: 0.3fr 0.5fr 0.3fr 0.7fr;
+      grid-template-areas: "h2-uno div-certificaciones" "p-uno div-certificaciones" "h3-uno div-certificaciones" "p-dos div-certificaciones"; }
+      .contenedor .main-calidad .h2-uno {
+        grid-area: h2-uno; }
+      .contenedor .main-calidad .div-certificaciones {
+        grid-area: div-certificaciones; }
+      .contenedor .main-calidad .p-uno {
+        grid-area: p-uno; }
+      .contenedor .main-calidad .h3-uno {
+        grid-area: h3-uno; }
+      .contenedor .main-calidad .p-dos {
+        grid-area: p-dos; }
     .contenedor .main-contacto {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
-      grid-template-areas: "formulario visitanos" "formulario visitanos" "llamanos visitanos" "contacto-redes contacto-redes"; }
+      grid-template-rows: 1fr 1.5fr 0.5fr;
+      grid-template-areas: "formulario visitanos" "formulario visitanos" "llamanos contacto-redes"; }
       .contenedor .main-contacto .formulario {
         grid-area: formulario; }
       .contenedor .main-contacto .visitanos {
         grid-area: visitanos; }
         .contenedor .main-contacto .visitanos iframe {
-          width: 95%;
-          height: 55%; }
+          width: 35rem;
+          height: 20rem; }
+        .contenedor .main-contacto .visitanos .p-uno {
+          padding: 0.5; }
+          .contenedor .main-contacto .visitanos .p-uno span {
+            font-weight: bold; }
       .contenedor .main-contacto .llamanos {
         grid-area: llamanos; }
       .contenedor .main-contacto .contacto-redes {

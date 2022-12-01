@@ -7,6 +7,9 @@
                 .form-control {
                     font-family: $tipogragia;
                 }
+                .formulario-area {
+                    height: 10rem;
+                }
                 .texto-mensaje {
                     color: gray;
                 }
@@ -15,6 +18,7 @@
     }
     .visitanos {
         iframe {
+            @extend %estilos-margenes;
             @extend %estilos-sombra;
         }
     }
@@ -29,6 +33,7 @@
         a {
             .imagen-redes {
                 width: 3rem;
+                margin: 0.5rem;
             }
         }    
     }

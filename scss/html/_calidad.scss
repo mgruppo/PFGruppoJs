@@ -1,0 +1,12 @@
+.main-calidad {
+    .div-certificaciones {
+        .carousel {
+        @extend %estilos-margenes;
+        }
+    }
+    .p-dos  {
+        span {
+            font-weight: bold;
+        }
+    }
+}

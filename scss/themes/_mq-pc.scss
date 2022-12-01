@@ -100,32 +100,29 @@
 
         //estilos de calidad
         /*estilos de mq para calidad*/
-        .calidad {
+        .main-calidad {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: 0.1fr 0.1fr 1fr 0.1fr;
+            grid-template-rows: 0.3fr 0.5fr 0.3fr 0.7fr;
             grid-template-areas:
-                "titulo-2 titulo-2"
-                "parrafo-principal parrafo-principal"
-                "div-calidad div-calidad"
-                "parrafo-secundario parrafo-secundario";
-
-            .titulo-2 {
-                grid-area: titulo-2;
+                "h2-uno div-certificaciones"
+                "p-uno div-certificaciones"
+                "h3-uno div-certificaciones"
+                "p-dos div-certificaciones";
+            .h2-uno {
+                grid-area: h2-uno;
             }
-
-            .div-calidad {
-                grid-area: div-calidad;
+            .div-certificaciones {
+                grid-area: div-certificaciones;
             }
-
-            .parrafo-principal {
-                grid-area: parrafo-principal;
-                margin: 2.5rem;
+            .p-uno {
+                grid-area: p-uno;
             }
-
-            .parrafo-secundario {
-                grid-area: parrafo-secundario;
-                margin: 2rem;
+            .h3-uno {
+                grid-area: h3-uno;
+            }
+            .p-dos {
+                grid-area: p-dos;
             }
         }
 
@@ -133,20 +130,25 @@
         .main-contacto {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1.5fr 0.5fr;
             grid-template-areas:
                 "formulario visitanos"
                 "formulario visitanos"
-                "llamanos visitanos"
-                "contacto-redes contacto-redes";
+                "llamanos contacto-redes";
             .formulario {
                 grid-area: formulario;
             }
             .visitanos {
                 grid-area: visitanos;
                 iframe {
-                    width: 95%;
-                    height: 55%;
+                    width: 35rem;
+                    height: 20rem;
+                }
+                .p-uno {
+                    padding: 0.5;
+                    span {
+                        font-weight: bold;
+                    }
                 }
             }
             .llamanos {
@@ -156,10 +158,6 @@
                 grid-area: contacto-redes;
             }
         }
-        //fin contacto
-
-
-
     }
 
 }
