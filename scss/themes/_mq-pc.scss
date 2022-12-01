@@ -166,6 +166,13 @@
                 grid-area: contacto-redes;
             }
         }
+
+        //contacto, para modicar el margen del titulo, debido a que el orden en la pantalla se da desde bt
+        .main-producto {
+            .titulo-2 {
+                margin: 1.5rem;
+            }
+        }
     }
 
 }

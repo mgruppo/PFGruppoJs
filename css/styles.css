@@ -92,7 +92,7 @@ footer {
   flex-direction: column;
   align-items: center; }
   .principal iframe {
-    width: 95%;
+    width: 90%;
     height: 95%;
     margin: 0.5rem;
     filter: drop-shadow(2px 3px 3px); }
@@ -217,7 +217,9 @@ footer {
       .contenedor .main-contacto .llamanos {
         grid-area: llamanos; }
       .contenedor .main-contacto .contacto-redes {
-        grid-area: contacto-redes; } }
+        grid-area: contacto-redes; }
+    .contenedor .main-producto .card-producto .row .col .card {
+      filter: drop-shadow(1px 4px 4px); } }
 
 /*se trabaja con la mq 1024 para pc*/
 @media screen and (min-width: 1024px) {
@@ -311,7 +313,9 @@ footer {
       .contenedor .main-contacto .llamanos {
         grid-area: llamanos; }
       .contenedor .main-contacto .contacto-redes {
-        grid-area: contacto-redes; } }
+        grid-area: contacto-redes; }
+    .contenedor .main-producto .titulo-2 {
+      margin: 1.5rem; } }
 
 /*Boton de whatsapp en todas las paginas*/
 .fixed {

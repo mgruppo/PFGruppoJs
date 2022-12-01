@@ -77,8 +77,10 @@
             display: block;
             display: flex;
             background-color: nth($colores-fondo, 2);
+
             div {
                 @include flex;
+
                 .quienes-imagen {
                     display: none;
                 }
@@ -151,6 +153,20 @@
                 grid-area: contacto-redes;
             }
         }
+
+        //contacto, para modicar la sombra, debido a que el orden en la pantalla se da desde bt
+        .main-producto {
+            .card-producto {
+                .row {
+                    .col {
+                        .card {
+                            filter: drop-shadow(1px 4px 4px);
+                        }
+                    }
+                }
+            }
+        }
+
     }
 
 }

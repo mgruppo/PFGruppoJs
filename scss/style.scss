@@ -9,9 +9,8 @@
 //estilos del body
 @import "base/body";
 //importamos los archivos secundarios
-//utilidades extend y condicionales
+//utilidades extend
 @import "utilidades/extend";
-@import "utilidades/condicionales";
 //importo los titulos y parrafos
 @import "base/tipografia";
 //partials de header y de footer
@@ -23,9 +22,9 @@
 @import "html/calidad";
 @import "html/productos";
 @import "html/contacto";
-//importamos mq de tablet
+//importamos mq de tablet, se toma como referencia medidas de iPad Air 820
 @import "themes/mq-tablet";
-//importamos mq de pc
+//importamos mq de pc, se toma como refenrencia medidas 1024
 @import "themes/mq-pc";
 //importamos generales, para elementos que se repiten en todas las paginas
 @import "themes/generales";
