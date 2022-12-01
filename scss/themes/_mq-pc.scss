@@ -13,7 +13,7 @@
         .principal {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr 0.5fr 0.5fr;
+            grid-template-rows: 0.7fr 1fr 0.5fr 0.5fr;
             grid-template-areas:
                 "p-h2-1 iframe"
                 "p-uno iframe"
@@ -48,12 +48,12 @@
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 0.5fr 0.5fr 0.5fr;
             grid-template-areas:
-                "h2 img"
-                "p-uno img"
-                "p-dos img";
+                "quienes-titulo quienes-foto-nosotros"
+                "p-uno quienes-foto-nosotros"
+                "p-dos quienes-foto-nosotros";
 
-            h2 {
-                grid-area: h2;
+            .quienes-titulo {
+                grid-area: quienes-titulo;
             }
 
             .p-uno {
@@ -64,8 +64,9 @@
                 grid-area: p-dos;
             }
 
-            img {
-                grid-area: img;
+            .quienes-foto-nosotros {
+                grid-area: quienes-foto-nosotros;
+                width: 95%;
             }
         }
 
@@ -76,10 +77,8 @@
             background-color: #e0c5b5;
 
             div {
-                padding: 0.7rem;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+                padding: 0.2rem;
+                @include flex;
 
                 .quienes-imagen {
                     display: block;
@@ -109,24 +108,30 @@
                 "p-uno div-certificaciones"
                 "h3-uno div-certificaciones"
                 "p-dos div-certificaciones";
+
             .h2-uno {
                 grid-area: h2-uno;
             }
+
             .div-certificaciones {
                 grid-area: div-certificaciones;
             }
+
             .p-uno {
                 grid-area: p-uno;
             }
+
             .h3-uno {
                 grid-area: h3-uno;
             }
+
             .p-dos {
                 grid-area: p-dos;
             }
         }
 
         //estilos contacto
+        /*estilos de mq de contacto*/
         .main-contacto {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -135,25 +140,28 @@
                 "formulario visitanos"
                 "formulario visitanos"
                 "llamanos contacto-redes";
+
             .formulario {
                 grid-area: formulario;
             }
+
             .visitanos {
                 grid-area: visitanos;
+
                 iframe {
                     width: 35rem;
                     height: 20rem;
                 }
+
                 .p-uno {
                     padding: 0.5;
-                    span {
-                        font-weight: bold;
-                    }
                 }
             }
+
             .llamanos {
-                grid-area: llamanos;  
+                grid-area: llamanos;
             }
+
             .contacto-redes {
                 grid-area: contacto-redes;
             }

@@ -21,6 +21,11 @@
             @extend %estilos-margenes;
             @extend %estilos-sombra;
         }
+        .p-uno {
+            span {
+                font-weight: bold;
+            }
+        }
     }
     .llamanos {
         .p-dos {

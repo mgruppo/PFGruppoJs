@@ -1,0 +1,156 @@
+//estilos para dispositivos tablet, se trabaja con 820px para dicha version
+//en el presente archivo se trabajan todas las mq de todas las paginas para tablet
+/*se trabaja con la mq 820 para tablet tomando referencia Ipad air*/
+@media screen and (min-width:820px) {
+
+    /*estilo del contenedor principal*/
+    .contenedor {
+        display: grid;
+        height: 100vh;
+
+        //estilos de index
+        /*estilos de mq para index*/
+        .principal {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 0.3fr 1fr 1.2fr;
+            grid-template-areas:
+                "p-h2-1 p-h2-2"
+                "p-uno p-dos"
+                "iframe iframe";
+
+            .p-h2-1 {
+                grid-area: p-h2-1;
+            }
+
+            .p-h2-2 {
+                grid-area: p-h2-2;
+            }
+
+            .p-uno {
+                grid-area: p-uno;
+            }
+
+            .p-dos {
+                grid-area: p-dos;
+            }
+
+            iframe {
+                grid-area: iframe;
+                width: 95%;
+                height: 100%;
+                margin: 1rem;
+            }
+        }
+
+        //estilos de quienes-somos
+        /*estilo de mq para quienes-somos*/
+        .quienes-somos {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 0.3fr 0.7fr 0.3fr;
+            grid-template-areas:
+                "quienes-titulo quienes-titulo"
+                "p-uno quienes-foto-nosotros"
+                "p-dos p-dos";
+
+            .quienes-titulo {
+                grid-area: quienes-titulo;
+            }
+
+            .p-uno {
+                grid-area: p-uno;
+            }
+
+            .p-dos {
+                grid-area: p-dos;
+                margin: 1.5rem;
+            }
+
+            .quienes-foto-nosotros {
+                grid-area: quienes-foto-nosotros;
+            }
+        }
+
+        /*estilos de section quienes somos*/
+        .section-paginas {
+            display: block;
+            display: flex;
+            background-color: nth($colores-fondo, 2);
+            div {
+                @include flex;
+                .quienes-imagen {
+                    display: none;
+                }
+            }
+        }
+
+        //estilos de calidad
+        /*estilos de mq para calidad*/
+        .main-calidad {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 0.1fr 0.2fr 0.7fr 0.1fr 0.2fr;
+            grid-template-areas:
+                "h2-uno h2-uno"
+                "p-uno p-uno"
+                "div-certificaciones div-certificaciones"
+                "h3-uno h3-uno"
+                "p-dos p-dos";
+
+            .h2-uno {
+                grid-area: h2-uno;
+            }
+
+            .div-certificaciones {
+                grid-area: div-certificaciones;
+            }
+
+            .p-uno {
+                grid-area: p-uno;
+            }
+
+            .h3-uno {
+                grid-area: h3-uno;
+            }
+
+            .p-dos {
+                grid-area: p-dos;
+            }
+        }
+
+        //estilos contacto
+        /*estilos de mq de contacto*/
+        .main-contacto {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 0.4fr 0.2fr 0.3fr;
+            grid-template-areas:
+                "formulario formulario"
+                "llamanos contacto-redes"
+                "visitanos visitanos";
+
+            .formulario {
+                grid-area: formulario;
+            }
+
+            .visitanos {
+                grid-area: visitanos;
+
+                iframe {
+                    width: 35rem;
+                    height: 20rem;
+                }
+            }
+
+            .llamanos {
+                grid-area: llamanos;
+            }
+
+            .contacto-redes {
+                grid-area: contacto-redes;
+            }
+        }
+    }
+
+}

@@ -16,7 +16,7 @@ body {
   margin: 0.3rem;
   padding: 0.4rem; }
 
-.quienes-somos img, .main-contacto .visitanos iframe {
+.quienes-somos .quienes-foto-nosotros, .main-contacto .visitanos iframe {
   width: 90%;
   height: 95%;
   margin: 0.3rem;
@@ -128,9 +128,96 @@ footer {
     height: 10rem; }
   .main-contacto .formulario form .datos-ingreso .texto-mensaje {
     color: gray; }
+  .main-contacto .visitanos .p-uno span {
+    font-weight: bold; }
   .main-contacto .contacto-redes a .imagen-redes {
     width: 3rem;
     margin: 0.5rem; }
+
+/*se trabaja con la mq 820 para tablet tomando referencia Ipad air*/
+@media screen and (min-width: 820px) {
+  /*estilo del contenedor principal*/
+  .contenedor {
+    display: grid;
+    height: 100vh;
+    /*estilos de mq para index*/
+    /*estilo de mq para quienes-somos*/
+    /*estilos de section quienes somos*/
+    /*estilos de mq para calidad*/
+    /*estilos de mq de contacto*/ }
+    .contenedor .principal {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 0.3fr 1fr 1.2fr;
+      grid-template-areas: "p-h2-1 p-h2-2" "p-uno p-dos" "iframe iframe"; }
+      .contenedor .principal .p-h2-1 {
+        grid-area: p-h2-1; }
+      .contenedor .principal .p-h2-2 {
+        grid-area: p-h2-2; }
+      .contenedor .principal .p-uno {
+        grid-area: p-uno; }
+      .contenedor .principal .p-dos {
+        grid-area: p-dos; }
+      .contenedor .principal iframe {
+        grid-area: iframe;
+        width: 95%;
+        height: 100%;
+        margin: 1rem; }
+    .contenedor .quienes-somos {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 0.3fr 0.7fr 0.3fr;
+      grid-template-areas: "quienes-titulo quienes-titulo" "p-uno quienes-foto-nosotros" "p-dos p-dos"; }
+      .contenedor .quienes-somos .quienes-titulo {
+        grid-area: quienes-titulo; }
+      .contenedor .quienes-somos .p-uno {
+        grid-area: p-uno; }
+      .contenedor .quienes-somos .p-dos {
+        grid-area: p-dos;
+        margin: 1.5rem; }
+      .contenedor .quienes-somos .quienes-foto-nosotros {
+        grid-area: quienes-foto-nosotros; }
+    .contenedor .section-paginas {
+      display: block;
+      display: flex;
+      background-color: #e0c5b5; }
+      .contenedor .section-paginas div {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .contenedor .section-paginas div .quienes-imagen {
+          display: none; }
+    .contenedor .main-calidad {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 0.1fr 0.2fr 0.7fr 0.1fr 0.2fr;
+      grid-template-areas: "h2-uno h2-uno" "p-uno p-uno" "div-certificaciones div-certificaciones" "h3-uno h3-uno" "p-dos p-dos"; }
+      .contenedor .main-calidad .h2-uno {
+        grid-area: h2-uno; }
+      .contenedor .main-calidad .div-certificaciones {
+        grid-area: div-certificaciones; }
+      .contenedor .main-calidad .p-uno {
+        grid-area: p-uno; }
+      .contenedor .main-calidad .h3-uno {
+        grid-area: h3-uno; }
+      .contenedor .main-calidad .p-dos {
+        grid-area: p-dos; }
+    .contenedor .main-contacto {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 0.4fr 0.2fr 0.3fr;
+      grid-template-areas: "formulario formulario" "llamanos contacto-redes" "visitanos visitanos"; }
+      .contenedor .main-contacto .formulario {
+        grid-area: formulario; }
+      .contenedor .main-contacto .visitanos {
+        grid-area: visitanos; }
+        .contenedor .main-contacto .visitanos iframe {
+          width: 35rem;
+          height: 20rem; }
+      .contenedor .main-contacto .llamanos {
+        grid-area: llamanos; }
+      .contenedor .main-contacto .contacto-redes {
+        grid-area: contacto-redes; } }
 
 /*se trabaja con la mq 1024 para pc*/
 @media screen and (min-width: 1024px) {
@@ -141,11 +228,12 @@ footer {
     /*estilos de mq para index*/
     /*estilo de mq para quienes-somos*/
     /*estilos de section quienes somos*/
-    /*estilos de mq para calidad*/ }
+    /*estilos de mq para calidad*/
+    /*estilos de mq de contacto*/ }
     .contenedor .principal {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr 0.5fr 0.5fr;
+      grid-template-rows: 0.7fr 1fr 0.5fr 0.5fr;
       grid-template-areas: "p-h2-1 iframe" "p-uno iframe" "p-h2-2 p-h2-2" "p-dos p-dos"; }
       .contenedor .principal .p-h2-1 {
         grid-area: p-h2-1; }
@@ -161,21 +249,22 @@ footer {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 0.5fr 0.5fr 0.5fr;
-      grid-template-areas: "h2 img" "p-uno img" "p-dos img"; }
-      .contenedor .quienes-somos h2 {
-        grid-area: h2; }
+      grid-template-areas: "quienes-titulo quienes-foto-nosotros" "p-uno quienes-foto-nosotros" "p-dos quienes-foto-nosotros"; }
+      .contenedor .quienes-somos .quienes-titulo {
+        grid-area: quienes-titulo; }
       .contenedor .quienes-somos .p-uno {
         grid-area: p-uno; }
       .contenedor .quienes-somos .p-dos {
         grid-area: p-dos; }
-      .contenedor .quienes-somos img {
-        grid-area: img; }
+      .contenedor .quienes-somos .quienes-foto-nosotros {
+        grid-area: quienes-foto-nosotros;
+        width: 95%; }
     .contenedor .section-paginas {
       display: block;
       display: flex;
       background-color: #e0c5b5; }
       .contenedor .section-paginas div {
-        padding: 0.7rem;
+        padding: 0.2rem;
         display: flex;
         flex-direction: column;
         align-items: center; }
@@ -219,8 +308,6 @@ footer {
           height: 20rem; }
         .contenedor .main-contacto .visitanos .p-uno {
           padding: 0.5; }
-          .contenedor .main-contacto .visitanos .p-uno span {
-            font-weight: bold; }
       .contenedor .main-contacto .llamanos {
         grid-area: llamanos; }
       .contenedor .main-contacto .contacto-redes {
