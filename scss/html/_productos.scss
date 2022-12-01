@@ -1,14 +1,17 @@
-.contenedor {
-    .main-producto {
-        .conectores {
-            .producto {
-                background-color: rgb(150, 151, 175);
-                width: 200px;
-                height: 200px;
-                margin: 10px 15px 20px 25px;
-                padding: 5px;
-                border: 2px solid rgb(0, 68, 95);
-                display: inline-block;
+.main-producto {
+    .card-producto {
+        @extend %estilos-margenes;
+        .row {
+            .col {
+                .card {
+                    background-color: nth($colores-fondo, 2);
+                    filter: drop-shadow(1px 2px 2px);
+                    @extend %estilos-margenes;
+                    .imagen-producto {
+                        height: 15rem;
+                        border-radius: 10%;
+                    }
+                }
             }
         }
     }
