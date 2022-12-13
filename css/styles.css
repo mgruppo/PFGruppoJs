@@ -65,12 +65,16 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly; }
-  header nav div .navbar-collapse .navbar-nav {
+  header .container nav div .navbar-brand img {
+    width: 15.5rem; }
+  header .container nav div .navbar-collapse .navbar-nav {
     font-family: "Roboto", sans-serif;
-    padding: 0.1rem;
-    text-align: center;
-    gap: 0.5rem; }
-    header nav div .navbar-collapse .navbar-nav .nav-item .active {
+    padding: 0.3rem;
+    gap: 0.5rem;
+    font-size: 1.1rem;
+    color: black;
+    text-align: center; }
+    header .container nav div .navbar-collapse .navbar-nav .nav-item .active {
       font-weight: bold;
       text-decoration: underline; }
 
@@ -140,11 +144,14 @@ footer {
   .contenedor {
     display: grid;
     height: 100vh;
+    /*estilo del menu para aumentar width de logo en pantalla tablet*/
     /*estilos de mq para index*/
     /*estilo de mq para quienes-somos*/
     /*estilos de section quienes somos*/
     /*estilos de mq para calidad*/
     /*estilos de mq de contacto*/ }
+    .contenedor header .container nav div .navbar-brand img {
+      width: 18rem; }
     .contenedor .principal {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -227,11 +234,14 @@ footer {
   .contenedor {
     display: grid;
     height: 100vh;
+    /*estilo del menu para aumentar width de logo en pantalla pc*/
     /*estilos de mq para index*/
     /*estilo de mq para quienes-somos*/
     /*estilos de section quienes somos*/
     /*estilos de mq para calidad*/
     /*estilos de mq de contacto*/ }
+    .contenedor header .container nav div .navbar-brand img {
+      width: 20rem; }
     .contenedor .principal {
       display: grid;
       grid-template-columns: 1fr 1fr;

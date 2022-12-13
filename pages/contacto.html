@@ -28,42 +28,45 @@
     <div class="contenedor">
         <header id="arriba">
             <!--menu en bootstrap-->
-            <nav class="navbar sticky-top navbar-expand-lg">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="../index.html">
-                        <img src="../img/logo-capodacqua.svg" alt="Logo de la empresa" width="300"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="../index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="quienes-somos.html">Quienes Somos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="productos.html">Productos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="calidad.html">Calidad</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
-                            </li>
-                        </ul>
+            <!--agrego div para ordenar menu bt-->
+            <div class="container">
+                <nav class="navbar sticky-top navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="../index.html">
+                            <img src="../img/logo-capodacqua.svg" alt="Logo de la empresa" width="300"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="quienes-somos.html">Quienes Somos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="productos.html">Productos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="calidad.html">Calidad</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </nav>
+                </nav>
+            </div>
             <h1 class="titulo-1">Contacto</h1>
         </header>
         <main class="main-contacto">
             <div class="formulario">
                 <h2 class="titulo-2">Escribinos</h2>
-                <!--formuario bt contacto-->
+                <!--formuario de contacto de bt-->
                 <form class="row g-3">
                     <div class="col-6 datos-ingreso">
                         <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
@@ -85,6 +88,7 @@
                 </form>
             </div>
             <div class="visitanos">
+                <!--mapa de google con la locacion de la empresa-->
                 <h2 class="titulo-2">Visítanos</h2>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.034076509587!2d-64.15590428426418!3d-31.413187203241755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2ac2806915d%3A0xb4591fbdb735d324!2sFrancisco%20Burges%2065%2C%20X5000%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1666748175026!5m2!1ses-419!2sar"
@@ -98,6 +102,7 @@
                 <p class="p-dos parrafo-secundario">Para comunicarte con nosotros: <span>(+54)9351-900-5063</span></p>
             </div>
             <div class="contacto-redes">
+                <!--redes sociales de la empresa-->
                 <h3 class="titulo-2">Stalkeanos</h3>
                 <a href="https://www.facebook.com/profile.php?id=100071684581446" target="_blank"><img
                         class="imagen-redes" src="../img/logo-facebook.png" alt="Link al facebook de la empresa"></a>

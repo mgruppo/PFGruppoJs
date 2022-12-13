@@ -8,6 +8,22 @@
         display: grid;
         height: 100vh;
 
+        //estilo de header en pantallas completas, para aumentar logo
+        /*estilo del menu para aumentar width de logo en pantalla pc*/
+        header {
+            .container {
+                nav {
+                    div {
+                        .navbar-brand {
+                            img {
+                                width: 20rem;
+                            }
+                        }
+                    }
+                }
+            }           
+        }    
+
         //estilos de index
         /*estilos de mq para index*/
         .principal {

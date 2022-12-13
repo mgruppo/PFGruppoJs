@@ -29,41 +29,46 @@
     <div class="contenedor">
         <header id="arriba">
             <!--menu en bootstrap-->
-            <nav class="navbar sticky-top navbar-expand-lg">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="../index.html">
-                        <img src="../img/logo-capodacqua.svg" alt="Logo de la empresa" width="300"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="../index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="quienes-somos.html">Quienes
-                                    Somos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="productos.html">Productos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="calidad.html">Calidad</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contacto.html">Contacto</a>
-                            </li>
-                        </ul>
+            <!--agrego div para ordenar menu bt-->
+            <div class="container">
+                <nav class="navbar sticky-top navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="../index.html">
+                            <img src="../img/logo-capodacqua.svg" alt="Logo de la empresa" width="300"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="quienes-somos.html">Quienes
+                                        Somos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="productos.html">Productos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="calidad.html">Calidad</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contacto.html">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </nav>
+                </nav>
+            </div>
             <h1 class="titulo-1">Quienes Somos</h1>
         </header>
+        <!--main principal de quienes somos-->
         <main class="quienes-somos">
-            <h2 class="quienes-titulo titulo-2">Somos una empresa con más de <span>40 años de trayectoria,</span>exportando nuestros
+            <h2 class="quienes-titulo titulo-2">Somos una empresa con más de <span>40 años de
+                    trayectoria,</span>exportando nuestros
                 productos al mundo</h2>
             <p class="p-uno parrafo-principal">Desarrollamos productos para el sector autopartista, orientados
                 principalmente a los conjuntos de tubos de motor (aire, agua, combustible, aceite y frenos) para
@@ -75,8 +80,10 @@
                 de tubos de motor (aire, agua, combustible, aceite, frenos…) para automotores, camiones y maquinarias
                 agrícolas, abasteciendo tanto a fábricas terminales automotrices como así también al mercado del
                 aftermarket.</p>
-            <img class="quienes-foto-nosotros" src="../img/nosotros-foto.jpg" width="560" height="315" alt="Foto de la empresa, dueños y empleados">
+            <img class="quienes-foto-nosotros" src="../img/nosotros-foto.jpg" width="560" height="315"
+                alt="Foto de la empresa, dueños y empleados">
         </main>
+        <!--seccion que aparece con imagenes en pantallas grandes y sin en pantallas celular y ipad-->
         <section class="section-paginas">
             <div>
                 <img class="quienes-imagen" src="../img/mision.png" alt="mision de la empresa">

@@ -4,19 +4,27 @@ header {
     @include flex;
     justify-content: space-evenly;
 
-    nav {
-        div {
-            .navbar-collapse {
-                .navbar-nav {
-                    font-family: $tipogragia;
-                    padding: 0.1rem;
-                    text-align: center;
-                    gap: 0.5rem;
+    .container {
+        nav {
+            div {
+                .navbar-brand {
+                    img {
+                        width: 15.5rem;
+                    }
+                }
 
-                    .nav-item {
-                        .active {
-                            font-weight: bold;
-                            text-decoration: underline;
+                .navbar-collapse {
+                    .navbar-nav {
+                        font-family: $tipogragia;
+                        padding: 0.3rem;
+                        gap: 0.5rem;
+                        @include formato-parrafo(nth($medidas-textos, 5), nth($colores-letras, 5), center);
+
+                        .nav-item {
+                            .active {
+                                font-weight: bold;
+                                text-decoration: underline;
+                            }
                         }
                     }
                 }
@@ -24,4 +32,3 @@ header {
         }
     }
 }
-

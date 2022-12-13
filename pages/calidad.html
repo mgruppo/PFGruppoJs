@@ -28,36 +28,39 @@
     <div class="contenedor">
         <header id="arriba">
             <!--menu en bootstrap-->
-            <nav class="navbar sticky-top navbar-expand-lg">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="../index.html">
-                        <img src="../img/logo-capodacqua.svg" alt="Logo de la empresa" width="300"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="../index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="quienes-somos.html">Quienes Somos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="productos.html">Productos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="calidad.html">Calidad</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contacto.html">Contacto</a>
-                            </li>
-                        </ul>
+            <!--agrego div para ordenar menu bt-->
+            <div class="container">
+                <nav class="navbar sticky-top navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="../index.html">
+                            <img src="../img/logo-capodacqua.svg" alt="Logo de la empresa" width="300"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="quienes-somos.html">Quienes Somos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="productos.html">Productos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="calidad.html">Calidad</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contacto.html">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </nav>
+                </nav>
+            </div>
             <h1 class="titulo-1">Calidad</h1>
         </header>
         <main class="main-calidad">
@@ -69,6 +72,7 @@
             <!--se agrega div para organizacion de carrusel en pantalla completa y se trabaja para mostrar las certificaciones-->
             <div class="div-certificaciones">
                 <h2 class="titulo-2">Certificaciones</h2>
+                <!--se utiliza carrusel de bt para presentar certificaciones-->
                 <div id="carouselCalidad" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner d-block justify-content-center">
                         <div class="carousel-item active">
@@ -92,6 +96,7 @@
                     </button>
                 </div>
             </div>
+            <!--informacion certificaciones que se estructura depende pantalla-->
             <h3 class="h3-uno titulo-3">ISO 9001:2015 e IATF 16949:2016</h3>
             <p class="p-dos parrafo-secundario">Desde el año 2015, nuestra empresa se encuentra certificada bajo las
                 normas
