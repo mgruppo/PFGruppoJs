@@ -1,7 +1,7 @@
 {
-  "name": "preentrega3gruppo",
+  "name": "proyecto-final-gruppo",
   "version": "1.0.0",
-  "description": "pre entrega del curso de desarrollo web de coderhouse",
+  "description": "Proyecto final del curso de desarrollo web de coderhouse",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mgruppo/PreEntrega3Gruppo.git"
+    "url": "https://github.com/mgruppo/PFGruppo"
   },
   "author": "Mariano Gruppo",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mgruppo/PreEntrega3Gruppo/issues"
+    "url": "https://github.com/mgruppo/PFGruppo/issues"
   },
-  "homepage": "https://mgruppo.github.io/PreEntrega3Gruppo/",
+  "homepage": " https://mgruppo.github.io/PFGruppo/",
   "devDependencies": {
     "node-sass": "^8.0.0",
     "nodemon": "^2.0.20"
