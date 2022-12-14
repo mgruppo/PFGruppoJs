@@ -4,8 +4,10 @@
         @extend %estilos-margenes;
         form {
             .datos-ingreso {
+                
                 .form-control {
                     font-family: $tipogragia;
+                    filter: drop-shadow(3px 2px 2px);
                 }
                 .formulario-area {
                     height: 10rem;
@@ -39,6 +41,7 @@
             .imagen-redes {
                 width: 3rem;
                 margin: 0.5rem;
+                filter: drop-shadow(1px 0.5px 0.5px);
             }
         }    
     }
