@@ -1,6 +1,6 @@
 //estilos para dispositivos pc, se trabaja con 1024px para dicha version
 //en el presente archivo se trabajan todas las mq de todas las paginas
-/*se trabaja con la mq 1024 para pc*/
+/*se trabaja con la media query 1024 para pc*/
 @media screen and (min-width:1024px) {
 
     /*estilo del contenedor principal*/
@@ -21,11 +21,11 @@
                         }
                     }
                 }
-            }           
-        }    
+            }
+        }
 
         //estilos de index
-        /*estilos de mq para index*/
+        /*estilos de media query para index*/
         .principal {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -58,7 +58,7 @@
         }
 
         //estilos de quienes-somos
-        /*estilo de mq para quienes-somos*/
+        /*estilo de media query para quienes-somos*/
         .quienes-somos {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -114,7 +114,7 @@
         }
 
         //estilos de calidad
-        /*estilos de mq para calidad*/
+        /*estilos de media query para calidad*/
         .main-calidad {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -147,7 +147,7 @@
         }
 
         //estilos contacto
-        /*estilos de mq de contacto*/
+        /*estilos de media query de contacto*/
         .main-contacto {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -183,7 +183,7 @@
             }
         }
 
-        //contacto, para modicar el margen del titulo, debido a que el orden en la pantalla se da desde bt
+        //producto, para modicar el margen del titulo debido a que queda pegado con las imagenes. La cantidad de cards de los productos en la pantalla se da desde bootstrap
         .main-producto {
             .titulo-2 {
                 margin: 1.5rem;

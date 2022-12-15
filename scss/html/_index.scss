@@ -1,6 +1,7 @@
-//estilos de index
+//estilos del index principal
 .principal {
     @include flex;
+
     iframe {
         width: 90%;
         height: 95%;

@@ -1,5 +1,6 @@
 //archivo de variables
 //colores de fondo
+/*se utilizan variables para color de fondo y letras, tipografia y tamaño de las mismas*/
 $color-fondo: rgb(224, 197, 181);
 $color-fondo-gradiente: linear-gradient(90deg, rgba(224, 197, 181, 1) 10%, rgba(234, 216, 206, 1) 35%, rgba(245, 236, 231, 1) 50%);
 //color de boton
@@ -11,21 +12,22 @@ rgb(224, 197, 181),
 #e0c5b5,
 whitesmoke;
 //color texto en listas
+//utilizando el color de fondo del gradiente y la pagina contrast-ratio se comparan los contraste de los colores de letras y titulos
 $colores-letras:
-#2b425f, //titulo 1
-#29547b, //titulo 2
-#001f3b, //titulo 3
-#182941, //texto
-black; //texto
+#2b425f, //titulo 1 - contraste de 6.26
+#29547b, //titulo 2 - contraste de 4.84
+#001f3b, //titulo 3 - contraste de 10.18
+#182941, //texto - contraste de 8.95
+black;  //texto - contraste de 12.82
 
 //medidas de texto
 $medidas-textos:
-2.2rem,//titulo 1
-1.8rem,//titulo 2
-1.6rem,//titulo 3
-1.2rem,//parrafo-principal
-1.1rem;//parrafo-secundario
+2.2rem, //titulo 1
+1.8rem, //titulo 2
+1.6rem, //titulo 3
+1.2rem, //parrafo-principal
+1.1rem; //parrafo-secundario
 
 //tipografia por defecto
-$tipogragia: 'Roboto', sans-serif;
-
+$tipogragia: 'Roboto',
+sans-serif;

@@ -1,5 +1,6 @@
 //para reutilizar codigo aplico mixin
 //mixin con parametros
+/*se trabaja con mixin para reutilizar codigo*/
 @mixin formato-parrafo($size, $color, $align) {
     font-size: $size;
     color: $color;

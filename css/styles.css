@@ -1,17 +1,20 @@
+@charset "UTF-8";
 /*se utiliza mobile first, tomando como base iphone se*/
-/*reset*/
+/*reset de estilos*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
-/*estilos generales del body*/
+/*se utilizan variables para color de fondo y letras, tipografia y tamaño de las mismas*/
+/*se trabaja con mixin para reutilizar codigo*/
+/*estilos generales del body en cuanto a tipografia y color de fondo y gradiente*/
 body {
   font-family: "Roboto", sans-serif;
   background: #e0c5b5;
   background: linear-gradient(90deg, #e0c5b5 10%, #ead8ce 35%, #f5ece7 50%); }
 
-/*extend*/
+/*se utiliza extend para extender los estilos de margenes, sombra, span y aumentar tamaño de objetos en escala*/
 .titulo-3, .parrafo-principal, .parrafo-secundario, .main-calidad .div-certificaciones .carousel, .main-producto .card-producto, .main-producto .card-producto .row .col .card, .main-contacto .formulario, .main-contacto .visitanos iframe {
   margin: 0.3rem;
   padding: 0.4rem; }
@@ -29,7 +32,7 @@ body {
 .nav-item:hover, .boton-capodacqua:hover, .imagen-redes:hover, .imagen-producto:hover {
   transform: scale(1.1); }
 
-/*estilo de las tipografias*/
+/*estilo de las tipografias y parramos principal y secundario, segun varibles*/
 .titulo-1 {
   font-size: 2.2rem;
   color: #2b425f;
@@ -59,7 +62,7 @@ body {
   color: #182941;
   text-align: center; }
 
-/*estilos de header*/
+/*estilo del header de los html para mejorar estilos del navbar utilizado y conocer la pagina vigente*/
 header {
   display: flex;
   flex-direction: column;
@@ -78,7 +81,7 @@ header {
       font-weight: bold;
       text-decoration: underline; }
 
-/*estilos de footer*/
+/*estilos del footer para aplicar estilo de texto de derechos reservados e imagenes de redes*/
 footer {
   display: flex;
   flex-direction: column;
@@ -101,7 +104,7 @@ footer {
     margin: 0.5rem;
     filter: drop-shadow(2px 3px 3px); }
 
-/*estilos de quienes somos*/
+/*estilo de la pagina quienes somos*/
 .quienes-somos {
   display: flex;
   flex-direction: column;
@@ -114,9 +117,11 @@ footer {
 .section-paginas div .quienes-imagen {
   display: none; }
 
+/*estilo de la pagina calidad*/
 .main-calidad .p-dos span {
   font-weight: bold; }
 
+/*estilo de la pagina productos*/
 .main-producto .card-producto .row .col .card {
   background-color: #e0c5b5;
   filter: drop-shadow(1px 2px 2px); }
@@ -124,6 +129,7 @@ footer {
     height: 15rem;
     border-radius: 10%; }
 
+/*estilo de la pagina contacto*/
 .main-contacto {
   text-align: center; }
   .main-contacto .formulario form .datos-ingreso .form-control {
@@ -140,18 +146,19 @@ footer {
     margin: 0.5rem;
     filter: drop-shadow(1px 0.5px 0.5px); }
 
-/*se trabaja con la mq 820 para tablet tomando referencia Ipad air*/
+/*media query para tablet*/
+/*se trabaja con la media query 820 para tablet tomando referencia ipad air para todas las paginas*/
 @media screen and (min-width: 820px) {
   /*estilo del contenedor principal*/
   .contenedor {
     display: grid;
     height: 100vh;
     /*estilo del menu para aumentar width de logo en pantalla tablet*/
-    /*estilos de mq para index*/
-    /*estilo de mq para quienes-somos*/
+    /*estilos de media query para index*/
+    /*estilo de media query para quienes-somos*/
     /*estilos de section quienes somos*/
-    /*estilos de mq para calidad*/
-    /*estilos de mq de contacto*/ }
+    /*estilos de media query para calidad*/
+    /*estilos de media query de contacto*/ }
     .contenedor header .container nav div .navbar-brand img {
       width: 18rem; }
     .contenedor .principal {
@@ -230,18 +237,19 @@ footer {
     .contenedor .main-producto .card-producto .row .col .card {
       filter: drop-shadow(1px 4px 4px); } }
 
-/*se trabaja con la mq 1024 para pc*/
+/*media query para pc*/
+/*se trabaja con la media query 1024 para pc*/
 @media screen and (min-width: 1024px) {
   /*estilo del contenedor principal*/
   .contenedor {
     display: grid;
     height: 100vh;
     /*estilo del menu para aumentar width de logo en pantalla pc*/
-    /*estilos de mq para index*/
-    /*estilo de mq para quienes-somos*/
+    /*estilos de media query para index*/
+    /*estilo de media query para quienes-somos*/
     /*estilos de section quienes somos*/
-    /*estilos de mq para calidad*/
-    /*estilos de mq de contacto*/ }
+    /*estilos de media query para calidad*/
+    /*estilos de media query de contacto*/ }
     .contenedor header .container nav div .navbar-brand img {
       width: 20rem; }
     .contenedor .principal {
@@ -329,7 +337,8 @@ footer {
     .contenedor .main-producto .titulo-2 {
       margin: 1.5rem; } }
 
-/*Boton de whatsapp en todas las paginas*/
+/*elementos generales de las paginas que se repiten*/
+/*Boton de whatsapp en todas las paginas en la parte inferior*/
 .fixed {
   position: fixed;
   bottom: 10px;
@@ -341,7 +350,7 @@ footer {
   animation-duration: 2s;
   animation-direction: alternate-reverse; }
 
-/*boton general, para igualar el formato en todos los botones*/
+/*boton general, para igualar el formato de todos los botones*/
 .boton-capodacqua {
   background-color: #7c95b8;
   font-family: "Roboto", sans-serif;
@@ -351,7 +360,7 @@ footer {
   box-shadow: 1px 1px 5px black;
   text-shadow: 1px 1px 5px black; }
 
-/*Animaciones*/
+/*Animaciones en las paginas*/
 /*Animacion de efecto constante boton whatsapp*/
 @keyframes img-movimiento {
   to {
@@ -359,17 +368,19 @@ footer {
   from {
     transform: scale(1.2); } }
 
-/*para efecto cuando hacen click menu*/
+/*efecto cuando se posicionan en el navbar*/
 .nav-item:hover {
   text-shadow: 0.7px 0.5px 1px black; }
 
 .navbar-brand:hover {
   filter: drop-shadow(0.5px 0.5px 1px); }
 
-/*efecto sobre botones de la pagina*/
+/*efecto cuando se posicionan sobre botones de la pagina*/
 .boton-capodacqua:hover {
   box-shadow: 1px 1px 2px black;
   background-color: #7c95b8; }
 
+/*efecto de imagenes de redes sociales en contacto mediante extend*/
+/*efecto de imagenes de productos dentro de las cards en pagina de productos*/
 .imagen-producto:hover {
   border-radius: 5%; }

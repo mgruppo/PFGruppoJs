@@ -1,4 +1,4 @@
-/*Boton de whatsapp en todas las paginas*/
+/*Boton de whatsapp en todas las paginas en la parte inferior*/
 .fixed {
     position: fixed;
     bottom: 10px;
@@ -11,7 +11,7 @@
     animation-direction: alternate-reverse;
 }
 
-/*boton general, para igualar el formato en todos los botones*/
+/*boton general, para igualar el formato de todos los botones*/
 .boton-capodacqua {
     background-color: $color-boton;
     font-family: $tipogragia;

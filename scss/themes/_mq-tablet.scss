@@ -1,6 +1,6 @@
 //estilos para dispositivos tablet, se trabaja con 820px para dicha version
 //en el presente archivo se trabajan todas las mq de todas las paginas para tablet
-/*se trabaja con la mq 820 para tablet tomando referencia Ipad air*/
+/*se trabaja con la media query 820 para tablet tomando referencia ipad air para todas las paginas*/
 @media screen and (min-width:820px) {
 
     /*estilo del contenedor principal*/
@@ -25,7 +25,7 @@
         }
 
         //estilos de index
-        /*estilos de mq para index*/
+        /*estilos de media query para index*/
         .principal {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -60,7 +60,7 @@
         }
 
         //estilos de quienes-somos
-        /*estilo de mq para quienes-somos*/
+        /*estilo de media query para quienes-somos*/
         .quienes-somos {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -104,7 +104,7 @@
         }
 
         //estilos de calidad
-        /*estilos de mq para calidad*/
+        /*estilos de media query para calidad*/
         .main-calidad {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -138,7 +138,7 @@
         }
 
         //estilos contacto
-        /*estilos de mq de contacto*/
+        /*estilos de media query de contacto*/
         .main-contacto {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -170,7 +170,7 @@
             }
         }
 
-        //contacto, para modicar la sombra, debido a que el orden en la pantalla se da desde bt
+        //producto, para modicar un poco la sombra de las cards. La cantidad de cards de los productos en la pantalla se da desde bootstrap
         .main-producto {
             .card-producto {
                 .row {

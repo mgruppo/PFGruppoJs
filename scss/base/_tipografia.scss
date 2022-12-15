@@ -1,4 +1,4 @@
-/*estilo de las tipografias*/
+/*estilo de las tipografias y parramos principal y secundario, segun varibles*/
 .titulo-1 {
     @include formato-titulo(nth($medidas-textos, 1), nth($colores-letras, 1), auto, nth($colores-letras, 1));
     font-weight: bold;
@@ -22,4 +22,3 @@
     @include formato-parrafo(nth($medidas-textos, 5), nth($colores-letras, 4), center);
     @extend %estilos-margenes;
 }
-

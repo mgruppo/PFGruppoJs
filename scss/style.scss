@@ -23,9 +23,12 @@
 @import "html/productos";
 @import "html/contacto";
 //importamos mq de tablet, se toma como referencia medidas de iPad Air 820
+/*media query para tablet*/
 @import "themes/mq-tablet";
-//importamos mq de pc, se toma como refenrencia medidas 1024
+//importamos mq de pc, se toma como referencia medidas 1024
+/*media query para pc*/
 @import "themes/mq-pc";
+/*elementos generales de las paginas que se repiten*/
 //importamos generales, para elementos que se repiten en todas las paginas
 @import "themes/generales";
 //importamos animaciones
